@@ -1,0 +1,43 @@
+# Analysis Configuration
+analysis:
+  temperature: 0.1
+  top_p: 0.95
+  top_k: 40
+  max_output_tokens: 8192
+  response_mime_type: text/plain
+
+# Screenshot Configuration
+screenshots:
+  width: 1280
+  height: 720
+  format: png
+  quality: 95
+
+# Documentation Configuration
+documentation:
+  format: docx
+  image_width: 6  # inches
+  font_size: 11
+  heading_style: Title
+
+# Directory Configuration
+directories:
+  input: input          # Input videos directory
+  output: output        # Generated output files
+  temp: temp           # Temporary files
+  logs: logs           # Log files
+
+# File Naming
+naming:
+  analysis_prefix: analysis_
+  doc_prefix: product_research_
+  screenshots_prefix: screenshots_
+
+# Logging Configuration
+logging:
+  level: INFO
+  file: logs/app.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  rotate: true
+  max_size: 10MB
+  backup_count: 5
